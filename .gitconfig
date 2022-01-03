@@ -16,6 +16,7 @@
 	amend = commit -a --amend --no-edit
 	unstage = reset --soft HEAD
 	cdiff = "!git diff $1 $1^"
+	graph = log --oneline --graph --decorate
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
