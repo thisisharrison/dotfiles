@@ -1,0 +1,23 @@
+[user]
+	name = Harrison Lau
+	email = harrison.lau@outlook.com
+[core]
+	excludesfile = /Users/harrisonlau/.gitignore_global
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[alias]
+	rh = reset --hard HEAD
+	b = checkout -b
+	co = checkout
+	ca = commit -a --verbose
+	cp = cherry-pick
+	amend = commit -a --amend --no-edit
+	unstage = reset --soft HEAD
+	cdiff = "!git diff $1 $1^"
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
