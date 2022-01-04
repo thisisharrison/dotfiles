@@ -29,6 +29,9 @@ npm install --global yarn typescript ts-node serve fkill-cli
 echo "🤖 brew installing stuff..."
 brew bundle
 
+echo "🤖 setup github..."
+source ./github-setup.sh
+
 echo "🤖 setup macos..."
 source ./.macos
 
