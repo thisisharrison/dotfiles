@@ -1,6 +1,19 @@
-echo "cloning dotfiles"
+#!/usr/bin/env bash
+echo "cloning dotfiles..."
 git clone https://github.com/thisisharrison/dotfiles.git "${HOME}/dotfiles"
+
+echo "setting up symlinks..."
 ln -s "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
 ln -s "${HOME}/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
 ln -s "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 ln -s "${HOME}/dotfiles/.vimrc" "${HOME}/.vimrc"
+
+source "${HOME}/.zshrc"
+
+echo "changing screenshot location..."
+test -d "${HOME}/Desktop/screenshots" || mkdir -p "${HOME}/Desktop/screenshots"
+defaults write com.apple.screencapture location -string "${HOME}/Desktop/screenshots"
+
+# Automatically hide and show the Dock
+echo "hiding dock..."
+defaults write com.apple.dock autohide -bool true

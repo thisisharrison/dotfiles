@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Load version control information
 autoload -Uz vcs_info
 precmd() { vcs_info }
@@ -42,12 +44,13 @@ alias gd="git diff";
 alias ga="git add .";
 
 # Yarn aliases 
-alias yinit="yarn init"
-alias yr="yarn run"
-alias ys="yarn start"
-alias yb="yarn build"
-alias yt="yarn test"
-alias yarn-update="yarn upgrade-interactive --latest";
+alias y="yarn"
+alias yinit="y init"
+alias yr="y run"
+alias ys="y start"
+alias yb="y build"
+alias yt="y test"
+alias yarn-update="y upgrade-interactive --latest";
 
 # NPM aliases
 alias ninit="npm init"
@@ -59,6 +62,15 @@ alias nt="npm run test -s --";
 alias ntw="npm run test:watch -s --";
 alias rmn="rm -rf node_modules"
 
+# Handle ARM
+# if [ “$(arch)” = “arm64” ]; then
+#     eval $(/opt/homebrew/bin/brew shellenv);
+#     export PATH=”$PATH:/usr/local/bin:/usr/local/sbin”;
+# else
+#     eval $(/usr/local/bin/brew shellenv);
+#     export PATH=”$PATH:/opt/homebrew/bin:/opt/homebrew/sbin”;
+# fi
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# export SDKMAN_DIR="$HOME/.sdkman"
+# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
