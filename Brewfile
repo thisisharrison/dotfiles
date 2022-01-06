@@ -29,6 +29,7 @@ cask "quicklook-json"
 cask "qlmarkdown"
 
 # Dev
+brew "tree"
 brew "python"
 brew "openjdk"
 brew "scala"
