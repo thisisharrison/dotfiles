@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 echo "symlink vscode settings"
+rm ${HOME}/Library/Application\ Support/Code/User/settings.json
 ln -s "${HOME}/dotfiles/VSCode/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 
 echo "install extensions"
