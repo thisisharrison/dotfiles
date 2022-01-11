@@ -62,6 +62,9 @@ alias nt="npm run test -s --";
 alias ntw="npm run test:watch -s --";
 alias rmn="rm -rf node_modules"
 
+# Bash alias 
+alias ll="ls --color=auto -alF"
+
 # Handle ARM
 # if [ “$(arch)” = “arm64” ]; then
 #     eval $(/opt/homebrew/bin/brew shellenv);
