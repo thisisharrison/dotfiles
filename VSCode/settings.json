@@ -80,10 +80,10 @@
     "todo-tree.highlights.defaultHighlight": {
         "icon": "check-circle-fill",
         "background": "green",
-        "type": "text",
+        "type": "tag",
         "gutterIcon": true,
         "iconColour": "green",
-        "foreground": "black"
+        "foreground": "white"
     },
     "todo-tree.highlights.customHighlight": {
         "BUG": {
