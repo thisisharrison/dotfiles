@@ -17,25 +17,41 @@ xcode-select --install
 echo "🤖 installing homebrew..."
 source ./install-homebrew.sh
 
-echo "🤖 installing node..."
-curl -L https://git.io/n-install | bash
-
-echo "node --version: $(node --version)"
-echo "npm --version: $(npm --version)"
-
-echo "🤖 installing a few global npm packages..."
-npm install --global yarn typescript ts-node serve fkill-cli
-
 echo "🤖 brew installing stuff..."
 brew bundle
 
 echo "🤖 setup github..."
 source ./github-setup.sh
 
+echo "🤖 installing node..."
+# curl -L https://git.io/n-install | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+nvm install node
+nvm install 16
+nvm use 16
+
 echo "🤖 setup macos..."
 source ./.macos
 
+echo "nvm --version: $(command -v nvm)"
+echo "node --version: $(node --version)"
+echo "npm --version: $(npm --version)"
+
+echo "🤖 installing a few global npm packages..."
+npm install --global yarn typescript ts-node serve fkill-cli
+
 echo "🤖 setup vscode..."
 source ./vscode-setup.sh
+
+echo "🤖 updating things..."
+# Update App Store apps
+sudo softwareupdate -i -a
+# Update Homebrew (Cask) & packages
+brew update
+brew upgrade
+# Update Ruby & gems
+sudo gem update —system
+sudo gem update
 
 echo "🤖 DONE!!! 🎉"

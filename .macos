@@ -2,11 +2,19 @@
 echo "cloning dotfiles..."
 git clone https://github.com/thisisharrison/dotfiles.git "${HOME}/dotfiles"
 
-echo "setting up symlinks..."
-ln -s "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
-ln -s "${HOME}/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
-ln -s "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
-ln -s "${HOME}/dotfiles/.vimrc" "${HOME}/.vimrc"
+echo "copying config files..."
+rm ${HOME}/.zshrc
+cp "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
+# ln -s "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
+rm ${HOME}/.gitignore_global
+cp "${HOME}/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
+# ln -s "${HOME}/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
+rm ${HOME}/.gitconfig
+cp "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
+# ln -s "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
+rm ${HOME}/.vimrc
+cp "${HOME}/dotfiles/.vimrc" "${HOME}/.vimrc"
+# ln -s "${HOME}/dotfiles/.vimrc" "${HOME}/.vimrc"
 
 source "${HOME}/.zshrc"
 
