@@ -65,17 +65,19 @@ alias rmn="rm -rf node_modules"
 # Bash alias 
 alias ll="ls --color=auto -alF"
 
-# # Handle ARM
-# if [ “$(arch)” = “arm64” ]; then
-#     eval $(/opt/homebrew/bin/brew shellenv);
-#     export PATH=”$PATH:/usr/local/bin:/usr/local/sbin”;
-# else
-#     eval $(/usr/local/bin/brew shellenv);
-#     export PATH=”$PATH:/opt/homebrew/bin:/opt/homebrew/sbin”;
-# fi
-
-nvm alias default 16
+# Handle ARM
+if [ “$(arch)” = “arm64” ]; then
+    # Homebrew
+    export PATH=/opt/homebrew/bin:$PATH
+    # # Java
+    # export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+    # export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+    # # Scala
+    # export SCALA_HOME="/opt/homebrew/bin/scala"
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+nvm alias default 16
