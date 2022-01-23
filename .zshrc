@@ -65,6 +65,11 @@ alias rmn="rm -rf node_modules"
 # Bash alias 
 alias ll="ls --color=auto -alF"
 
+# Company
+alias company="cd $HOME/Documents/company"
+# Personal
+alias personal="cd $HOME/Documents/personal"
+
 # Handle ARM
 if [ “$(arch)” = “arm64” ]; then
     # Homebrew
