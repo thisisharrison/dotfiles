@@ -25,15 +25,6 @@ alias python="python3"
 alias code="\"/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code\""
 function c { code ${@:-.} }
 
-# Shortcuts to directories
-alias pinnacle="cd ~/Documents/pinnacle/"
-alias ub="cd ~/Documents/pinnacle/ub-frontend-project/"
-alias pgame="cd ~/Documents/pinnacle/pgaming-frontend-project/"
-alias corefe="cd ~/Documents/pinnacle/core-fe-project/"
-alias frontend="cd ~/Documents/pinnacle/frontend-libraries/"
-alias harry="cd ~/Documents/coding/"
-alias preface="cd ~/Documents/preface/"
-
 # Git aliases
 function gc { git commit -m "$@"; }
 alias gs="git status";
