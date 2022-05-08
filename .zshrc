@@ -33,6 +33,8 @@ alias gf="git fetch";
 alias gpush="git push";
 alias gd="git diff";
 alias ga="git add .";
+alias gb="git branch --sort=-committerdate"
+alias gb:name="gb --format='%(if)%(HEAD)%(then)%(color:green)* %(authorname) %(refname:short)%(else)  %(authorname) %(refname:short)%(end)'"
 
 # Yarn aliases 
 alias y="yarn"
