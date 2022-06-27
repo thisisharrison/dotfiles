@@ -37,6 +37,7 @@ brew "mit-scheme"
 brew "rust"
 brew "postgresql"
 brew "pgcli"
+brew "protobuf"
 
 # Command-Line tools 
 brew "jq"
