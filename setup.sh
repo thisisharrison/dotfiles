@@ -59,7 +59,8 @@ sudo gem update
 
 echo "🤖 install oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp omz-setup.sh $ZSH_CUSTOM 
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+cp omz-config.zsh $ZSH_CUSTOM 
 cp alias.zsh $ZSH_CUSTOM
 
 echo "🤖 DONE!!! 🎉"
