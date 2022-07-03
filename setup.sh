@@ -24,7 +24,6 @@ source ./github-setup.sh
 
 # Download nvm
 echo "🤖 installing node..."
-# curl -L https://git.io/n-install | bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 # Copy dot and config files. 
@@ -48,10 +47,6 @@ npm install --global yarn typescript ts-node serve fkill-cli
 echo "🤖 brew installing stuff..."
 brew bundle install Brewfile
 
-# Disable if use VS Code Settings Sync
-# echo "🤖 setup vscode..."
-# source ./vscode-setup.sh
-
 echo "🤖 updating things..."
 # Update App Store apps
 sudo softwareupdate -i -a
@@ -61,5 +56,10 @@ brew upgrade
 # Update Ruby & gems
 sudo gem update —system
 sudo gem update
+
+echo "🤖 install oh-my-zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp omz-setup.sh $ZSH_CUSTOM 
+cp alias.zsh $ZSH_CUSTOM
 
 echo "🤖 DONE!!! 🎉"
