@@ -1,11 +1,11 @@
 # # If require two github configs
 # [includeIf "gitdir:~/Documents/personal/"]
 #   path = ~/.gitconfig-personal
-# [includeIf "gitdir:~/Documents/serai/"]
+# [includeIf "gitdir:~/Documents/work/"]
 #   path = ~/.gitconfig-work
 [user]
-	name = lauharrison
-	email = harrison.lau@companyname.com
+	name = thisisharrison
+	email = harrison.lau@outlook.com
 [core]
 	excludesfile = /Users/harrisonlau/.gitignore_global
 [pull]
