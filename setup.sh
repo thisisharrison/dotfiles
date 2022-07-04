@@ -47,6 +47,12 @@ npm install --global yarn typescript ts-node serve fkill-cli
 echo "🤖 brew installing stuff..."
 brew bundle install Brewfile
 
+echo "🤖 install oh-my-zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+cp omz-config.zsh $ZSH_CUSTOM 
+cp alias.zsh $ZSH_CUSTOM
+
 echo "🤖 updating things..."
 # Update App Store apps
 sudo softwareupdate -i -a
@@ -56,11 +62,5 @@ brew upgrade
 # Update Ruby & gems
 sudo gem update —system
 sudo gem update
-
-echo "🤖 install oh-my-zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-cp omz-config.zsh $ZSH_CUSTOM 
-cp alias.zsh $ZSH_CUSTOM
 
 echo "🤖 DONE!!! 🎉"
