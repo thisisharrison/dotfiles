@@ -28,6 +28,8 @@ cask "qlmarkdown"
 # Dev
 brew "tree"
 brew "python"
+brew "pyenv"
+brew "pyenv-virtualenv"
 brew "rust"
 brew "golang"
 brew "protobuf"

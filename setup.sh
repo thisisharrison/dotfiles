@@ -52,6 +52,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 cp omz-config.zsh $ZSH_CUSTOM 
 cp alias.zsh $ZSH_CUSTOM
+cat .zshrc >> $ZSH_CUSTOM/exports.zsh
 
 echo "🤖 updating things..."
 # Update App Store apps
