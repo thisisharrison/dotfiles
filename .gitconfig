@@ -4,7 +4,7 @@
 # [includeIf "gitdir:~/Documents/work/"]
 #   path = ~/.gitconfig-work
 [user]
-	name = thisisharrison
+	name = Harrison Lau
 	email = harrison.lau@outlook.com
 [core]
 	excludesfile = /Users/harrisonlau/.gitignore_global
