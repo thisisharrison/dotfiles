@@ -35,6 +35,7 @@ brew "golang"
 brew "protobuf"
 brew "postgresql"
 brew "pgcli"
+brew "lua"
 
 # Command-Line tools 
 brew "jq"
