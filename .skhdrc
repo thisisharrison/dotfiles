@@ -1,0 +1,51 @@
+# https://github.com/koekeishiya/skhd
+# https://github.com/koekeishiya/yabai/blob/master/examples/skhdrc
+# https://github.com/koekeishiya/yabai/wiki/Commands#message-passing-interface
+
+# ====== Focus window ======
+# Focus window pt.1
+alt - h: yabai -m window --focus west
+alt - l: yabai -m window --focus east
+alt - j: yabai -m window --focus south
+alt - k: yabai -m window --focus north
+
+# Focus window pt.2
+alt - p: yabai -m window --focus prev
+alt - n: yabai -m window --focus next
+
+# ====== Window movement ======
+# Swap window
+ctrl + alt - h: yabai -m window --swap west
+ctrl + alt - l: yabai -m window --swap east
+ctrl + alt - j: yabai -m window --swap south
+ctrl + alt - k: yabai -m window --swap north
+
+# Warp window
+ctrl + alt - left: yabai -m window --warp west
+ctrl + alt - right: yabai -m window --warp east
+ctrl + alt - down: yabai -m window --warp south
+ctrl + alt - up: yabai -m window --warp north
+
+# flip along y-axis
+ctrl + alt - y: yabai -m space --mirror y-axis
+# flip along x-axis
+ctrl + alt - x: yabai -m space --mirror x-axis
+
+# ====== Sizing ======
+# resize
+shift + alt - h: yabai -m window west --resize right:-40:0 2> /dev/null || yabai -m window --resize right:-40:0
+shift + alt - j: yabai -m window north --resize bottom:0:40 2> /dev/null || yabai -m window --resize bottom:0:40
+shift + alt - k: yabai -m window south --resize top:0:-40 2> /dev/null || yabai -m window --resize top:0:-40
+shift + alt - l: yabai -m window east --resize left:40:0 2> /dev/null || yabai -m window --resize left:40:0
+
+# toggle max screen
+shift + alt - m: yabai -m window --toggle zoom-fullscreen
+# Un-tile something
+shift + alt - f: yabai -m window --toggle float
+
+# balance tiles
+shift + alt - space: yabai -m space --balance
+
+# ====== Start / Stop yabai ======
+alt - q: yabai --stop-service
+alt - s: yabai --start-service

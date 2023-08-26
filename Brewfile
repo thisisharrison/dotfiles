@@ -9,7 +9,6 @@ tap "homebrew/cask-versions"
 # Cask
 cask "visual-studio-code"
 cask "jetbrains-toolbox"
-cask "atom"
 cask "docker"
 cask "google-chrome"
 cask "firefox"
@@ -39,3 +38,11 @@ brew "lua"
 
 # Command-Line tools 
 brew "jq"
+
+# Window manager
+brew "koekeishiya/formulae/yabai"
+brew "koekeishiya/formulae/skhd"
+
+# Clipboard manager
+brew "maccy"
+
