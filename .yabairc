@@ -1,8 +1,12 @@
+# Whitelist of apps to use Yabai - keep this at the top! 
+yabai -m rule --add app!="(Code|Chrome)" manage=off 
+
 # bsp or float (default: float)
-yabai -m config layout bsp
+yabai -m config --space 1 layout bsp
 
 # Override default layout for space 2 only
-yabai -m config --space 2 layout float
+# disable other windows (for now)
+# yabai -m config --space 2 layout float
 
 # New window spawns to the left if vertical split, or top if horizontal split
 yabai -m config window_placement first_child
@@ -33,11 +37,3 @@ yabai -m config mouse_follows_focus on
 
 # Drop and swap 
 yabai -m config mouse_drop_action swap
-
-# Turn off for following systems
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Notes$" manage=off
-yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Books$" manage=off
-yabai -m rule --add app="^Finder$" manage=off
-yabai -m rule --add app="^Terminal$" manage=off
