@@ -54,6 +54,10 @@ cp omz-config.zsh $ZSH_CUSTOM
 cp alias.zsh $ZSH_CUSTOM
 cat .zshrc >> $ZSH_CUSTOM/exports.zsh
 
+# Setup tiling manager
+cat .yabairc >> $HOME/.yabairc
+cat .skhdrc >> $HOME/.skhdrc
+
 echo "🤖 updating things..."
 # Update App Store apps
 sudo softwareupdate -i -a
