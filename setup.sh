@@ -58,6 +58,9 @@ cat .zshrc >> $ZSH_CUSTOM/exports.zsh
 cat .yabairc >> $HOME/.yabairc
 cat .skhdrc >> $HOME/.skhdrc
 
+# Setup vscode
+source ./code-setup.sh
+
 echo "🤖 updating things..."
 # Update App Store apps
 sudo softwareupdate -i -a

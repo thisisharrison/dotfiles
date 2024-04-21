@@ -1,0 +1,188 @@
+{
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "workbench.iconTheme": "material-icon-theme",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.formatOnPaste": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.bracketPairColorization.enabled": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggestSelection": "recentlyUsed",
+        "editor.suggest.showKeywords": false
+    },
+    "[javascript]": {
+        // "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggestSelection": "recentlyUsed",
+        "editor.suggest.showKeywords": false
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+        "editor.defaultFormatter": "darkriszty.markdown-table-prettify",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.markdownlint": "explicit"
+        }
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnType": true
+    },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "black-formatter.path": ["black"],
+    "editor.tabSize": 4,
+    "isort.check": true,
+    "isort.args": ["--profile", "black"],
+    "markdown.preview.fontSize": 13,
+    "editor.hover.enabled": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": true,
+    "editor.rulers": [],
+    "editor.snippetSuggestions": "top",
+    "editor.fontLigatures": false,
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 200,
+    "prettier.trailingComma": "es5",
+    "prettier.bracketSpacing": false,
+    "prettier.arrowParens": "avoid",
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/coverage": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.build": true,
+        "**/.gh-pages": true
+    },
+    "workbench.sideBar.location": "left",
+    "workbench.panel.defaultLocation": "bottom",
+    "workbench.startupEditor": "none",
+    // Change to false when screen sharing on smaller screens
+    // "workbench.activityBar.visible": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": true,
+    "git.mergeEditor": false,
+    //eslint
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.validate": ["mdx"],
+    // typescript react
+    "[typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.linkedEditing": true,
+    // python
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    // "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "black",
+    "python.analysis.autoImportCompletions": true,
+    // "files.associations": {
+    //     "**/templates/*/*.html": "django-html",
+    //     "**/templates/*": "django-txt"
+    // },
+    // "emmet.includeLanguages": {
+    //     "django-html": "html"
+    // },
+    // "[django-html]": {
+    //     "editor.defaultFormatter": null
+    // },
+    // highlights
+    "todo-tree.highlights.defaultHighlight": {
+        "type": "text"
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check-circle-fill",
+            "background": "green",
+            "gutterIcon": true,
+            "type": "tag",
+            "iconColour": "green",
+            "foreground": "white"
+        },
+        "BUG": {
+            "icon": "bug",
+            "background": "#FAA43A",
+            "gutterIcon": true,
+            "iconColour": "#FAA43A",
+            "foreground": "black"
+        },
+        "FIXME": {
+            "icon": "flame",
+            "background": "red",
+            "gutterIcon": true,
+            "iconColour": "red",
+            "foreground": "white"
+        },
+        "NOTE": {
+            "background": "blue",
+            "foreground": "white"
+        },
+        "REVIEW": {
+            "background": "pink",
+            "foreground": "black"
+        }
+    },
+    "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "NOTE", "REVIEW"],
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "sync.gist": "3bb6f4e9b7f4904f246a85bb5e5f3446",
+    "leetcode.workspaceFolder": "/Users/harrisonlau/Documents/coding/algo-playground/src",
+    "leetcode.defaultLanguage": "javascript",
+    "protoc": {
+        "path": "/opt/homebrew/bin/protoc",
+        "compile_on_save": false
+    },
+    "python.terminal.activateEnvironment": false,
+    "vim.smartRelativeLine": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "notebook.output.textLineLimit": 15,
+    "[edi]": {
+        "editor.defaultFormatter": "Silvenga.edi-x12-support"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "editor.formatOnSave": true,
+    "editor.cursorSurroundingLines": 100,
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 3,
+    "editor.codeActionsOnSave": {},
+    "workbench.colorTheme": "Default Dark+",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.multiCursorLimit": 50000,
+    "redhat.telemetry.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "application.shellEnvironmentResolutionTimeout": 20
+}
