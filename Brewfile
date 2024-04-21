@@ -23,6 +23,7 @@ cask "slack"
 cask "discord"
 cask "quicklook-json"
 cask "qlmarkdown"
+cask "libreoffice"
 
 # Dev
 brew "tree"
