@@ -12,13 +12,6 @@ cp "$HOME/dotfiles/.gitignore_global" "$HOME/.gitignore_global"
 rm $HOME/.gitconfig || echo "no previous .gitconfig"
 cp "$HOME/dotfiles/.gitconfig" "$HOME/.gitconfig"
 
-# # If require two github configs
-# rm $HOME/.gitconfig-personal || echo "no previous .gitconfig-personal"
-# cp "$HOME/dotfiles/.gitconfig-personal" "$HOME/.gitconfig-personal"
-
-# rm $HOME/.gitconfig-work || echo "no previous .gitconfig-work"
-# cp "$HOME/dotfiles/.gitconfig-work" "$HOME/.gitconfig-work"
-
 rm $HOME/.vimrc || cp "$HOME/dotfiles/.vimrc" "$HOME/.vimrc"
 
 source "$HOME/.zshrc"
@@ -28,5 +21,6 @@ test -d "$HOME/Desktop/screenshots" || mkdir -p "$HOME/Desktop/screenshots"
 defaults write com.apple.screencapture location -string "$HOME/Desktop/screenshots"
 
 # Automatically hide and show the Dock
+# https://macos-defaults.com/dock/autohide.html
 echo "hiding dock..."
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock "autohide" -bool "true" && killall Dock

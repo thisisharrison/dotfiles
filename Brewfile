@@ -24,6 +24,7 @@ cask "discord"
 cask "quicklook-json"
 cask "qlmarkdown"
 cask "libreoffice"
+cask "maccy"
 
 # Dev
 brew "tree"
@@ -43,7 +44,3 @@ brew "jq"
 # Window manager
 brew "koekeishiya/formulae/yabai"
 brew "koekeishiya/formulae/skhd"
-
-# Clipboard manager
-brew "maccy"
-
