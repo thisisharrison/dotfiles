@@ -24,3 +24,6 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop/screensho
 # https://macos-defaults.com/dock/autohide.html
 echo "hiding dock..."
 defaults write com.apple.dock "autohide" -bool "true" && killall Dock
+
+echo "setting press and hold..."
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
